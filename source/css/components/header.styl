@@ -1,4 +1,4 @@
-header
+header.main
     width 100%
     padding-top 50px
     position absolute
@@ -13,9 +13,18 @@ header
         color: $color.text
         display flex
         justify-content: space-between
+        +below($bp.lg)
+            display none
     .social
         font-size 25px
         color: $color.secondary
+        +below($bp.lg)
+            display none
         a
             &:not(:last-child)
              margin-right 10px
+    .toggle
+        font-size: 25px
+        color: $color.secondary
+        +above($bp.lg)
+            display none

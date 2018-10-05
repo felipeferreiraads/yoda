@@ -1,0 +1,48 @@
+.media
+    padding: 150px 0 100px
+    background: url(../img/bg-media.jpg)
+    +below($bp.lg)
+        padding-top: 100px
+    header
+        display flex
+        justify-content: center
+        align-items: center
+        padding-bottom: 100px
+        +below($bp.lg)
+            padding-bottom: 50px
+        img
+            margin-right: 20px
+            +below($bp.lg)
+                height: 50px
+        h1
+            font-size: 50px
+            font-weight: 300
+            text-transform: uppercase
+            color: $color.text
+            +below($bp.lg)
+                font-size: 35px
+    .grid
+        display flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .item
+        flex-basis: 32%
+        &:nth-child(n+4)
+            margin-top: 50px
+        +below($bp.lg)
+            flex-basis: 49%
+            &:nth-child(n+3)
+                margin-top: 50px
+        +below($bp.sm)
+            flex-basis: 100%
+            &:nth-child(n+2)
+                margin-top: 50px
+        iframe
+            width: 100%
+            height 300px
+        h2
+            font-size: 22px
+            color: $color.gray-x-x-dark
+            font-weight: 400
+            text-align: center
+            margin-top: 20px

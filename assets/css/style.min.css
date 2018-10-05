@@ -429,6 +429,7 @@ textarea {
 body {
   font-family: 'Open Sans' , serif;
   font-size: 100%;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -2208,7 +2209,210 @@ body.swal2-iosfix {
     order: 1;
   }
 }
-header {
+.career {
+  min-height: 100vh;
+  display: flex;
+  padding: 0 20px;
+}
+.career .text {
+  flex-basis: 60%;
+  padding-top: 150px;
+  padding-left: calc((100% - 1280px) / 2);
+  padding-right: 10%;
+  padding-bottom: 100px;
+}
+.career .text p {
+  font-size: 16px;
+  color: #909090;
+  line-height: 2;
+}
+.career .text p:not(:last-child) {
+  margin-bottom: 30px;
+}
+.career .text p.featured {
+  font-weight: 800;
+  color: #44bbc3;
+  font-size: 18px;
+}
+.career .content {
+  padding-top: 100px;
+}
+.career header {
+  display: flex;
+  padding-bottom: 100px;
+  position: relative;
+}
+.career header::after {
+  content: '';
+  width: 170%;
+  height: 2px;
+  background: #ffa900;
+  position: absolute;
+  bottom: 0;
+  right: calc(50% + ((100% - 1280px) / 2));
+}
+.career header figure {
+  width: 150px;
+  height: 150px;
+}
+.career header figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.career header .info {
+  flex: 1;
+  padding-left: 20px;
+}
+.career header .info h1 {
+  color: #909090;
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+}
+.career header .info p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+.career header .info p span {
+  color: #44bbc3;
+  font-weight: 800;
+  font-size: 30px;
+}
+.career .image {
+  flex: 1;
+  position: relative;
+}
+.career .image .yoda {
+  max-width: 100%;
+  max-height: 95%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.career .image .bg {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.feature {
+  padding: 80px 0;
+  background: #909090;
+}
+.feature .grid {
+  display: flex;
+  align-items: center;
+}
+.feature .logo {
+  width: 35%;
+  padding-right: 50px;
+}
+.feature .text {
+  padding-left: 50px;
+  border-left: 1px solid #fff;
+}
+.feature .text p {
+  color: #fff;
+  line-height: 2;
+}
+.yotalkshow {
+  background: url("../img/bg-yotalkshow.jpg") center no-repeat;
+  background-size: cover;
+}
+.yotalkshow .text {
+  border-left: 1px solid #44bbc3;
+}
+footer {
+  background: #303030;
+  padding: 100px 0;
+}
+@media only screen and (max-width: 1024px) {
+  footer {
+    padding: 50px 0;
+  }
+}
+footer .grid {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1024px) {
+  footer .grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .grid > *:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  footer .item {
+    flex-basis: 30%;
+  }
+  footer .item:last-child {
+    flex-basis: 25%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  footer .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer .item h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+footer .item p {
+  color: #fff;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 1024px) {
+  footer .item p {
+    text-align: center;
+  }
+}
+footer .item .social {
+  color: #ffa900;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+footer .item .social a:not(:last-child) {
+  margin-right: 10px;
+}
+footer .item .menu a {
+  color: #ffa900;
+  display: block;
+  font-size: 14px;
+}
+footer .item .menu a::before {
+  content: '';
+  border-style: solid;
+  border-width: 5px 0 5px 10px;
+  border-color: transparent transparent transparent #44bbc3;
+  display: inline-block;
+  margin-right: 5px;
+}
+footer .item .menu a:not(:last-child) {
+  margin-bottom: 5px;
+}
+footer .item .mail {
+  color: #fff;
+  line-height: 1;
+}
+footer .item .mail .fa {
+  color: #44bbc3;
+  font-size: 25px;
+}
+header.main {
   width: 100%;
   padding-top: 50px;
   position: absolute;
@@ -2216,22 +2420,41 @@ header {
   left: 0;
   z-index: 9999;
 }
-header .grid {
+header.main .grid {
   display: flex;
   justify-content: space-between;
 }
-header .menu {
+header.main .menu {
   flex-basis: 50%;
   color: #909090;
   display: flex;
   justify-content: space-between;
 }
-header .social {
+@media only screen and (max-width: 1024px) {
+  header.main .menu {
+    display: none;
+  }
+}
+header.main .social {
   font-size: 25px;
   color: #ffa900;
 }
-header .social a:not(:last-child) {
+@media only screen and (max-width: 1024px) {
+  header.main .social {
+    display: none;
+  }
+}
+header.main .social a:not(:last-child) {
   margin-right: 10px;
+}
+header.main .toggle {
+  font-size: 25px;
+  color: #ffa900;
+}
+@media only screen and (min-width: 1024px) {
+  header.main .toggle {
+    display: none;
+  }
 }
 .home .left {
   width: 50%;
@@ -2265,5 +2488,82 @@ header .social a:not(:last-child) {
   font-size: 50px;
   color: #fff;
   font-weight: 300;
+}
+.media {
+  padding: 150px 0 100px;
+  background: url("../img/bg-media.jpg");
+}
+@media only screen and (max-width: 1024px) {
+  .media {
+    padding-top: 100px;
+  }
+}
+.media header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .media header {
+    padding-bottom: 50px;
+  }
+}
+.media header img {
+  margin-right: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .media header img {
+    height: 50px;
+  }
+}
+.media header h1 {
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #909090;
+}
+@media only screen and (max-width: 1024px) {
+  .media header h1 {
+    font-size: 35px;
+  }
+}
+.media .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.media .item {
+  flex-basis: 32%;
+}
+.media .item:nth-child(n+4) {
+  margin-top: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .media .item {
+    flex-basis: 49%;
+  }
+  .media .item:nth-child(n+3) {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .media .item {
+    flex-basis: 100%;
+  }
+  .media .item:nth-child(n+2) {
+    margin-top: 50px;
+  }
+}
+.media .item iframe {
+  width: 100%;
+  height: 300px;
+}
+.media .item h2 {
+  font-size: 22px;
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.min.css.map */
