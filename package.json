@@ -33,12 +33,6 @@
       "extensions": "jpg,jpeg,png,svg,gif"
     }
   },
-  "standard": {
-    "globals": [
-      "jQuery",
-      "$"
-    ]
-  },
   "devDependencies": {
     "autoprefixer-stylus": "^0.10.0",
     "babel-core": "^6.26.0",
@@ -57,7 +51,6 @@
     "rupture": "^0.6.1",
     "simplifyify": "^3.2.1",
     "snazzy": "^5.0.0",
-    "standard": "^8.1.0",
     "stylus": "^0.54.5",
     "webpack": "^3.11.0"
   },
