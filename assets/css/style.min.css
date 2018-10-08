@@ -2210,7 +2210,6 @@ body.swal2-iosfix {
   }
 }
 .career {
-  min-height: 100vh;
   display: flex;
   padding: 0 20px;
 }
@@ -2220,6 +2219,12 @@ body.swal2-iosfix {
   padding-left: calc((100% - 1280px) / 2);
   padding-right: 10%;
   padding-bottom: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .career .text {
+    flex-basis: 100%;
+    padding: 100px 0 50px 0;
+  }
 }
 .career .text p {
   font-size: 16px;
@@ -2237,10 +2242,22 @@ body.swal2-iosfix {
 .career .content {
   padding-top: 100px;
 }
+@media only screen and (max-width: 1024px) {
+  .career .content {
+    padding-top: 50px;
+  }
+}
 .career header {
   display: flex;
   padding-bottom: 100px;
   position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  .career header {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
 }
 .career header::after {
   content: '';
@@ -2251,9 +2268,23 @@ body.swal2-iosfix {
   bottom: 0;
   right: calc(50% + ((100% - 1280px) / 2));
 }
+@media only screen and (max-width: 1024px) {
+  .career header::after {
+    width: 70%;
+    left: -20px;
+    right: auto;
+  }
+}
 .career header figure {
   width: 150px;
   height: 150px;
+}
+@media only screen and (max-width: 1024px) {
+  .career header figure {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
 }
 .career header figure img {
   width: 100%;
@@ -2272,9 +2303,20 @@ body.swal2-iosfix {
   letter-spacing: 5px;
   margin-bottom: 15px;
 }
+@media only screen and (max-width: 1024px) {
+  .career header .info h1 {
+    font-size: 30px;
+  }
+}
 .career header .info p {
   font-size: 20px;
   line-height: 1.6;
+}
+@media only screen and (max-width: 1024px) {
+  .career header .info p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
 .career header .info p span {
   color: #44bbc3;
@@ -2284,6 +2326,11 @@ body.swal2-iosfix {
 .career .image {
   flex: 1;
   position: relative;
+}
+@media only screen and (max-width: 1024px) {
+  .career .image {
+    display: none;
+  }
 }
 .career .image .yoda {
   max-width: 100%;
@@ -2304,17 +2351,49 @@ body.swal2-iosfix {
   padding: 80px 0;
   background: #909090;
 }
+@media only screen and (max-width: 1024px) {
+  .feature {
+    padding: 50px 0;
+  }
+}
 .feature .grid {
   display: flex;
   align-items: center;
 }
-.feature .logo {
-  width: 35%;
-  padding-right: 50px;
+@media only screen and (max-width: 1024px) {
+  .feature .grid {
+    flex-direction: column;
+  }
 }
-.feature .text {
-  padding-left: 50px;
-  border-left: 1px solid #fff;
+.feature .logo {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 1024px) {
+  .feature .logo {
+    flex-basis: 30%;
+    padding-right: 50px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .feature .logo {
+    margin-bottom: 30px;
+  }
+}
+.feature .logo img {
+  max-width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  .feature .logo img {
+    max-width: 150px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .feature .text {
+    flex-basis: 70%;
+    padding-left: 50px;
+    border-left: 1px solid #fff;
+  }
 }
 .feature .text p {
   color: #fff;
@@ -2324,8 +2403,95 @@ body.swal2-iosfix {
   background: url("../img/bg-yotalkshow.jpg") center no-repeat;
   background-size: cover;
 }
-.yotalkshow .text {
-  border-left: 1px solid #44bbc3;
+@media only screen and (min-width: 1024px) {
+  .yotalkshow .text {
+    border-left: 1px solid #44bbc3;
+  }
+}
+.noline {
+  background: #44bbc3;
+}
+.awards {
+  padding: 70px 0;
+}
+@media only screen and (max-width: 1024px) {
+  .awards {
+    padding: 50px 0;
+  }
+}
+.awards .grid {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .awards .grid {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.awards p {
+  font-size: 22px;
+  color: #909090;
+  text-align: right;
+  padding: 0 20px 0 30%;
+}
+@media only screen and (max-width: 1024px) {
+  .awards p {
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+.awards img {
+  height: 150px;
+}
+@media only screen and (max-width: 1024px) {
+  .awards img {
+    height: 100px;
+    margin-bottom: 20px;
+  }
+}
+.proplayer {
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 1024px) {
+  .proplayer {
+    padding-bottom: 50px;
+  }
+}
+.proplayer h2 {
+  font-size: 35px;
+  color: #44bbc3;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.proplayer p {
+  color: #909090;
+  line-height: 2;
+}
+.proplayer p img {
+  float: right;
+  margin: -55px 0 20px 30px;
+}
+@media only screen and (max-width: 1024px) {
+  .proplayer p img {
+    float: none;
+    display: block;
+    margin: 0 0 20px 0;
+    max-width: 100%;
+  }
+}
+.proplayer p span {
+  display: block;
+  font-size: 50px;
+  color: #ffa900;
+  text-align: center;
+  font-weight: 800;
+}
+.proplayer::after {
+  content: '';
+  clear: both;
+  display: block;
 }
 footer {
   background: #303030;
@@ -2460,7 +2626,7 @@ header.main .toggle {
   width: 50%;
   height: 100vh;
   background: url("../img/logo.jpg") 100% 60% no-repeat;
-  background-size: auto 70%;
+  background-size: auto 60%;
   position: absolute;
   top: 0;
   left: 0;
@@ -2473,11 +2639,11 @@ header.main .toggle {
   align-items: center;
 }
 .home .mail span {
-  font-size: 18px;
+  font-size: 16px;
   color: #909090;
 }
 .home .mail .fa {
-  font-size: 22px;
+  font-size: 20px;
   color: #44bbc3;
   margin-right: 10px;
 }
