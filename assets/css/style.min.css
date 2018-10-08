@@ -2465,11 +2465,25 @@ header.main .toggle {
   top: 0;
   left: 0;
 }
+.home .mail {
+  position: absolute;
+  bottom: 30px;
+  left: calc((100% - 1280px) / 2);
+  display: flex;
+  align-items: center;
+}
+.home .mail span {
+  font-size: 18px;
+  color: #909090;
+}
+.home .mail .fa {
+  font-size: 22px;
+  color: #44bbc3;
+  margin-right: 10px;
+}
 .home .right {
-  width: 80%;
+  width: 70%;
   height: 100vh;
-  background: url("../img/yoda.png") bottom right no-repeat;
-  background-size: auto 100%;
   position: absolute;
   top: 0;
   right: 0;
@@ -2483,11 +2497,19 @@ header.main .toggle {
   bottom: 25%;
   left: 35%;
   line-height: 1;
+  z-index: 1;
 }
 .home .right h1:first-line {
   font-size: 50px;
   color: #fff;
   font-weight: 300;
+}
+.home .right img {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .media {
   padding: 150px 0 100px;
