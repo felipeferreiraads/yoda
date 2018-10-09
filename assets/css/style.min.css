@@ -2589,26 +2589,41 @@ header.main {
 header.main .grid {
   display: flex;
   justify-content: space-between;
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 1024px) {
+  header.main .grid {
+    position: relative;
+  }
 }
 header.main .menu {
-  flex-basis: 50%;
-  color: #909090;
   display: flex;
-  justify-content: space-between;
+}
+@media only screen and (min-width: 1024px) {
+  header.main .menu {
+    flex-basis: 50%;
+    color: #909090;
+    justify-content: space-between;
+  }
 }
 @media only screen and (max-width: 1024px) {
   header.main .menu {
     display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    flex-direction: column;
+    padding: 15px;
+    color: #fff;
+    background: #44bbc3;
+  }
+  header.main .menu > *:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 header.main .social {
   font-size: 25px;
   color: #ffa900;
-}
-@media only screen and (max-width: 1024px) {
-  header.main .social {
-    display: none;
-  }
 }
 header.main .social a:not(:last-child) {
   margin-right: 10px;
@@ -2631,6 +2646,11 @@ header.main .toggle {
   top: 0;
   left: 0;
 }
+@media only screen and (max-width: 1024px) {
+  .home .left {
+    display: none;
+  }
+}
 .home .mail {
   position: absolute;
   bottom: 30px;
@@ -2638,9 +2658,18 @@ header.main .toggle {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 1280px) {
+  .home .mail {
+    left: 20px;
+  }
+}
 .home .mail span {
-  font-size: 16px;
   color: #909090;
+}
+@media only screen and (max-width: 1024px) {
+  .home .mail span {
+    color: #fff;
+  }
 }
 .home .mail .fa {
   font-size: 20px;
@@ -2648,12 +2677,22 @@ header.main .toggle {
   margin-right: 10px;
 }
 .home .right {
-  width: 70%;
   height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+}
+@media only screen and (min-width: 1024px) {
+  .home .right {
+    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .home .right {
+    background: url("../img/yoda-mobile.jpg") top center no-repeat;
+    background-size: cover;
+  }
 }
 .home .right h1 {
   font-size: 80px;
@@ -2661,7 +2700,7 @@ header.main .toggle {
   font-weight: 800;
   position: absolute;
   bottom: 25%;
-  left: 35%;
+  left: 28%;
   line-height: 1;
   z-index: 1;
 }
@@ -2670,12 +2709,33 @@ header.main .toggle {
   color: #fff;
   font-weight: 300;
 }
-.home .right img {
+@media only screen and (max-width: 1024px) {
+  .home .right h1 {
+    left: 20px;
+    bottom: 200px;
+    font-size: 60px;
+  }
+  .home .right h1:first-line {
+    font-size: 35px;
+  }
+}
+.home .right .yoda {
   min-width: 100%;
   min-height: 100%;
   position: absolute;
   bottom: 0;
   left: 0;
+}
+@media only screen and (max-width: 1024px) {
+  .home .right .yoda {
+    display: none;
+  }
+}
+.home .right .logo {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  z-index: 2;
 }
 .media {
   padding: 150px 0 100px;

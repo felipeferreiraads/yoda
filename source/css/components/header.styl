@@ -8,18 +8,29 @@ header.main
     .grid
         display flex
         justify-content: space-between
+        flex-direction: row-reverse
+        +below($bp.lg)
+            position: relative
     .menu
-        flex-basis 50%
-        color: $color.text
         display flex
-        justify-content: space-between
+        +above($bp.lg)
+            flex-basis 50%
+            color: $color.text
+            justify-content: space-between
         +below($bp.lg)
             display none
+            position: absolute
+            top: 30px
+            left 0
+            flex-direction: column
+            padding: 15px
+            color white
+            background: $color.primary
+            > *:not(:last-child)
+                margin-bottom: 10px
     .social
         font-size 25px
         color: $color.secondary
-        +below($bp.lg)
-            display none
         a
             &:not(:last-child)
              margin-right 10px
