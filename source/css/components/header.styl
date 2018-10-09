@@ -8,14 +8,13 @@ header.main
     .grid
         display flex
         justify-content: space-between
-        flex-direction: row-reverse
         +below($bp.lg)
+            flex-direction: row-reverse
             position: relative
     .menu
         display flex
         +above($bp.lg)
             flex-basis 50%
-            color: $color.text
             justify-content: space-between
         +below($bp.lg)
             display none
@@ -23,11 +22,17 @@ header.main
             top: 30px
             left 0
             flex-direction: column
-            padding: 15px
-            color white
+            padding: 25px
             background: $color.primary
             > *:not(:last-child)
                 margin-bottom: 10px
+        a
+            color: $color.text
+            transition: .2s
+            +below($bp.lg)
+                color white
+            &:hover
+                color: $color.primary
     .social
         font-size 25px
         color: $color.secondary

@@ -1,5 +1,5 @@
 $(document).click(e => {
-    if(!$(e.target).closest('.toggle').length) {
+    if(!$(e.target).closest('.toggle, .menu').length) {
         if($('.menu').is(":visible")) {
             $('.menu').hide()
         }
