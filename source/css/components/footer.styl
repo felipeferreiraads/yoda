@@ -1,11 +1,12 @@
 footer
     background: $color.gray-x-dark
-    padding: 100px 0
+    padding: 100px 0 0
     +below($bp.lg)
-        padding: 50px 0
+        padding: 50px 0 0
     .grid
         display flex
         justify-content: space-between
+        padding-bottom 70px
         +below($bp.lg)
             flex-direction: column
             align-items: center
@@ -58,3 +59,25 @@ footer
             .fa
                 color: $color.primary
                 font-size: 25px
+    .see-too
+        padding 50px 0
+        background #1e1e1e
+        display flex
+        justify-content: center
+        align-items: center
+        +below($bp.md)
+            flex-direction column
+        > *:not(:last-child)
+            margin-right 30px
+            +below($bp.md)
+                margin: 0 0 30px 0
+        span
+            font-size 18px
+            color: #9a9a9a
+            text-transform uppercase
+            letter-spacing: 3px
+        a
+            img
+                transition .3s
+                &:hover
+                    filter: invert(100%)

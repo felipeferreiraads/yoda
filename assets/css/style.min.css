@@ -2275,6 +2275,9 @@ body.swal2-iosfix {
     right: auto;
   }
 }
+.career header.brand::after {
+  background: #44bbc3;
+}
 .career header figure {
   width: 150px;
   height: 150px;
@@ -2346,6 +2349,12 @@ body.swal2-iosfix {
   bottom: 0;
   left: 0;
   z-index: 1;
+}
+.career .image .yoda.logo {
+  bottom: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .career .image .bg {
   min-width: 100%;
@@ -2503,16 +2512,17 @@ body.swal2-iosfix {
 }
 footer {
   background: #303030;
-  padding: 100px 0;
+  padding: 100px 0 0;
 }
 @media only screen and (max-width: 1024px) {
   footer {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 }
 footer .grid {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 70px;
 }
 @media only screen and (max-width: 1024px) {
   footer .grid {
@@ -2586,6 +2596,38 @@ footer .item .mail .fa {
   color: #44bbc3;
   font-size: 25px;
 }
+footer .see-too {
+  padding: 50px 0;
+  background: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 800px) {
+  footer .see-too {
+    flex-direction: column;
+  }
+}
+footer .see-too > *:not(:last-child) {
+  margin-right: 30px;
+}
+@media only screen and (max-width: 800px) {
+  footer .see-too > *:not(:last-child) {
+    margin: 0 0 30px 0;
+  }
+}
+footer .see-too span {
+  font-size: 18px;
+  color: #9a9a9a;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+footer .see-too a img {
+  transition: 0.3s;
+}
+footer .see-too a img:hover {
+  filter: invert(100%);
+}
 header.main {
   width: 100%;
   padding-top: 50px;
@@ -2604,12 +2646,14 @@ header.main .grid {
     position: relative;
   }
 }
-header.main .menu {
+header.main .menu > div {
   display: flex;
 }
 @media only screen and (min-width: 1024px) {
   header.main .menu {
     flex-basis: 50%;
+  }
+  header.main .menu > div {
     justify-content: space-between;
   }
 }
@@ -2619,11 +2663,13 @@ header.main .menu {
     position: absolute;
     top: 30px;
     left: 0;
-    flex-direction: column;
     padding: 25px;
     background: #44bbc3;
   }
-  header.main .menu > *:not(:last-child) {
+  header.main .menu > div {
+    flex-direction: column;
+  }
+  header.main .menu > div > *:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -2738,11 +2784,10 @@ header.main .toggle {
   }
 }
 .home .right .yoda {
-  min-width: 100%;
-  min-height: 100%;
+  height: 100%;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 0;
+  right: 0;
 }
 @media only screen and (max-width: 1024px) {
   .home .right .yoda {
@@ -2754,6 +2799,11 @@ header.main .toggle {
   bottom: 30px;
   right: 20px;
   z-index: 2;
+}
+@media only screen and (min-width: 1024px) {
+  .home .right .logo {
+    display: none;
+  }
 }
 .media {
   padding: 150px 0 100px;

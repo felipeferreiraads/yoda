@@ -12,20 +12,23 @@ header.main
             flex-direction: row-reverse
             position: relative
     .menu
-        display flex
+        > div
+            display flex
         +above($bp.lg)
             flex-basis 50%
-            justify-content: space-between
+            > div
+                justify-content: space-between
         +below($bp.lg)
             display none
             position: absolute
             top: 30px
             left 0
-            flex-direction: column
             padding: 25px
             background: $color.primary
-            > *:not(:last-child)
-                margin-bottom: 10px
+            > div
+                flex-direction: column
+                > *:not(:last-child)
+                    margin-bottom: 10px
         a
             color: $color.text
             transition: .2s
