@@ -31,7 +31,7 @@
                         <a href="<?php echo site_url('/midia/'); ?>">Mídia</a>
                     </div>
                 </nav>
-                <?php if(is_page('home')): ?>
+                <?php if(is_page(['home', 'midia', 'criacao-de-conteudo'])): ?>
                 <nav class="social">
                     <a href="#"><span class="fa fa-facebook-square"></span></a>
                     <a href="#"><span class="fa fa-twitch"></span></a>
