@@ -3,7 +3,7 @@
     <section class="media">
         <div class="container">
             <header>
-                <img src="<?php get_template_directory_uri(); ?>/assets/img/logo.png" alt="YoDa">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="YoDa">
                 <h1>Mídia</h1>
             </header>
 

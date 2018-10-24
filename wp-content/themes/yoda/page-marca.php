@@ -18,8 +18,8 @@
             </div>
         </div>
         <div class="image">
-            <img src="<?php get_template_directory_uri(); ?>/assets/img/logo-big.png" class="yoda logo"/>
-            <img src="<?php get_template_directory_uri(); ?>/assets/img/bg-brand.jpg" class="bg" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-big.png" class="yoda logo"/>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg-brand.jpg" class="bg" />
         </div>
     </section>
 

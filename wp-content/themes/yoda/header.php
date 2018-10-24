@@ -25,12 +25,13 @@
                     <div>
                         <a href="<?php echo site_url('/'); ?>">Home</a>
                         <a href="<?php echo site_url('/carreira/'); ?>">Carreira</a>
-                        <a href="<?php echo site_url('/produtos/'); ?>">Produtos</a>
+                        <a href="#">Produtos</a>
                         <a href="<?php echo site_url('/criacao-de-conteudo/'); ?>">Criação de Conteúdo</a>
                         <a href="<?php echo site_url('/marca/'); ?>">Marca</a>
                         <a href="<?php echo site_url('/midia/'); ?>">Mídia</a>
                     </div>
                 </nav>
+                <?php if(is_page('home')): ?>
                 <nav class="social">
                     <a href="#"><span class="fa fa-facebook-square"></span></a>
                     <a href="#"><span class="fa fa-twitch"></span></a>
@@ -38,6 +39,7 @@
                     <a href="#"><span class="fa fa-twitter"></span></a>
                     <a href="#"><span class="fa fa-youtube-play"></span></a>
                 </nav>
+                <?php endif; ?>
                 <div class="toggle">
                     <span class="fa fa-bars"></span>
                 </div>
