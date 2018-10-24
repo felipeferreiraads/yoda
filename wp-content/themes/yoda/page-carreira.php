@@ -1,56 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Felipe Yoda</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,900|Open+Sans:300,400,800" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
-</head>
-<body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.1&appId=253811747993905&autoLogAppEvents=1';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-
-    <header class="main">
-        <div class="container">
-            <div class="grid">
-                <nav class="menu">
-                    <div>
-                        <a href="/yoda/index.html">Home</a>
-                        <a href="/yoda/carreira.html">Carreira</a>
-                        <a href="#">Produtos</a>
-                        <a href="#">Criação de Conteúdo</a>
-                        <a href="/yoda/marca.html">Marca</a>
-                        <a href="/yoda/midia.html">Mídia</a>
-                        <a href="#">Contato</a>
-                    </div>
-                </nav>
-                <nav class="social">
-                    <a href="#"><span class="fa fa-facebook-square"></span></a>
-                    <a href="#"><span class="fa fa-twitch"></span></a>
-                    <a href="#"><span class="fa fa-instagram"></span></a>
-                    <a href="#"><span class="fa fa-twitter"></span></a>
-                    <a href="#"><span class="fa fa-youtube-play"></span></a>
-                </nav>
-                <div class="toggle">
-                    <span class="fa fa-bars"></span>
-                </div>
-            </div>
-        </div>
-    </header>
+<?php get_header(); ?>
 
     <section class="career">
         <div class="text">
             <header>
                 <figure>
-                    <img src="assets/img/logo.jpg" alt="YoDa">
+                    <img src="<?php get_template_directory_uri(); ?>/assets/img/logo.jpg" alt="YoDa">
                 </figure>
                 <div class="info">
                     <h1>Felipe Noronha</h1>
@@ -63,8 +17,8 @@
             </div>
         </div>
         <div class="image">
-            <img src="assets/img/yoda-pic.png" class="yoda"/>
-            <img src="assets/img/bg-career.jpg" class="bg" />
+            <img src="<?php get_template_directory_uri(); ?>/assets/img/yoda-pic.png" class="yoda"/>
+            <img src="<?php get_template_directory_uri(); ?>/assets/img/bg-career.jpg" class="bg" />
         </div>
     </section>
 
@@ -72,7 +26,7 @@
         <div class="container">
             <div class="grid">
                 <div class="logo">
-                    <img src="assets/img/logo-sehloiro.png" alt="SehLoiro">
+                    <img src="<?php get_template_directory_uri(); ?>/assets/img/logo-sehloiro.png" alt="SehLoiro">
                 </div>
                 <div class="text">
                     <p>Em 2016, Yoda fundou a SehLoiro Oficial e criou a SL Network, primeira rede de streamers gamers do Brasil, com a participação de profissionais como o analista Guilherme "Tixinha" Cheida e o narrador Diego "Toboco" Pereira, Daniel "Daniels Marcon", streamer e reserva da INTZ, além de Thiago Skip, Paola Buzz, Richard Gigante, Casal Brisa Suava, Jukes, Jovirone e outros.</p>
@@ -85,7 +39,7 @@
         <div class="container">
             <div class="grid">
                 <div class="logo">
-                    <img src="assets/img/logo-yotalkshow.png" alt="YoTalkshow">
+                    <img src="<?php get_template_directory_uri(); ?>/assets/img/logo-yotalkshow.png" alt="YoTalkshow">
                 </div>
                 <div class="text">
                     <p>Em 2017, YoDa estreou o seu novo projeto <strong>YoTalkshow</strong>, que é um talk show ao vivo transmitido pela plataforma Twitch.tv com alguns quadros inventados por ele e algumas paródias de outros programas, como o "Depois do Nexus" da Riot games, que acabou virando "Depois da Noia" no talk show, e no programa de estréia, após os quadros, durante sua entrevista com Gabriel "Kami" Bohm, YoDa atingiu a marca de 114 mil espectadores simultâneos, colocando a # do programa em primeiro lugar no trending topics do Twitter e quebrando recorde de audiência da plataforma de stream no Brasil (que pertencia a ele mesmo, era por volta de 40 mil espectadores). Em apenas 3 horas após criado, o canal do "YoTalkshow"chegou a ultrapassar os 100 mil inscritos no Youtube.</p>
@@ -98,7 +52,7 @@
         <div class="container">
             <div class="grid">
                 <div class="logo">
-                    <img src="assets/img/logo-noline.png" alt="NoLine">
+                    <img src="<?php get_template_directory_uri(); ?>/assets/img/logo-noline.png" alt="NoLine">
                 </div>
                 <div class="text">
                     <p>Em 2018 tornou-se sócio da nøline empresa de consultoria de eSports e conexão de culturas, lança em setembro seu primeiro joguinho de click para android e iOS, o YoLive.tv e o primeiro projeto de conexão entre música e Game, o Masters of. ao lado do Alok, maior DJ do Brasil. Em outubro sai na frente e lança a Live Arena, método inovador e pioneiro, com cursos de capacitação para profissões voltadas ao universo gamer.</p>
@@ -111,7 +65,7 @@
         <div class="container">
             <div class="grid">
                 <p>YoDa concorreu ao Prêmio eSports Brasil 2017 nas categorias <strong>Personalidade do Ano, Melhor Streamer e Craque da Galera,</strong>onde foi o único a ganhar os 3 prêmios concorridos.</p>
-                <img src="assets/img/trophy.png" alt="Awards">
+                <img src="<?php get_template_directory_uri(); ?>/assets/img/trophy.png" alt="Awards">
             </div>
         </div>
     </section>
@@ -120,7 +74,7 @@
         <div class="container">
             <h2>ProPlayer</h2>
             <p>
-                <img src="assets/img/yoda-career.jpg" alt="ProPlayer">
+                <img src="<?php get_template_directory_uri(); ?>/assets/img/yoda-career.jpg" alt="ProPlayer">
                 YoDa entrou no cenário competitivo de League of Legends disputando os antigos Go4LoL, torneios mensais que equivaliam a uma segunda divisão brasileira. Estreou competitivamente por Kaov Carregador, equipe amadora que passou a se chamar Legends BR,e conseguiu vaga para disputar a segunda etapa do CBLoL de 2014, a Final Regional. YoDa ajudou a fundar a IMP e-Sports quando sua antiga equipe cessou suas atividades. Em abril de 2015, já com grande sucesso como streamer, foi contratado para a rota do meio da CNB após ser escolhido num processo seletivo. Estreando no novo formato do CBLOL, defendeu a CNB na segunda etapa de 2015 e na primeira etapa de 2016. No primeiro split de YoDa, sua equipe foi semifinalista.<br /><br />
                 Para a segunda etapa de 2016, YoDa foi contratado pela Red Canids, mas para atuar em ofício distinto do qual sempre se destacara: a selva. Seu desempenho na função foi contestado e a equipe amargou a penúltima colocação no campeonato, à frente apenas da Big Gods, que venceu a própria Big Gods e manteve-se na elite do LoL BR.<br /><br />
                 Em 2017, YoDa continuou na Red Canids, mas foi movido para reserva imediato de Tockers.<br /><br />
@@ -133,40 +87,4 @@
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="grid">
-                <div class="item">
-                    <div class="fb-page" data-href="https://www.facebook.com/Stoneyoda/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Stoneyoda/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Stoneyoda/">Felipe &quot; YoDa &quot;Noronha</a></blockquote></div>
-                </div>
-                <div class="item">
-                    <h3>Conecte-se</h3>
-                    <p>Acompanhe as novidades em tempo real :)</p>
-                    <nav class="social">
-                        <a href="#"><span class="fa fa-facebook-square"></span></a>
-                        <a href="#"><span class="fa fa-twitch"></span></a>
-                        <a href="#"><span class="fa fa-instagram"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-youtube-play"></span></a>
-                    </nav>
-                    <a href="#" target="_blank" class="mail">
-                        <span class="fa fa-envelope"></span>
-                        <span>contato@felipeyoda.com.br</span>
-                    </a>
-                </div>
-                <div class="item">
-                    <h3>Acesso rápido</h3>
-                    <nav class="menu">
-                        <a href="#">Carreira</a>
-                        <a href="#">Marca</a>
-                        <a href="#">Mídia</a>
-                        <a href="#">Contato</a>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="assets/js/bundle.min.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>

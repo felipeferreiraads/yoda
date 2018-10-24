@@ -6,20 +6,29 @@
     <title>Felipe Yoda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,900|Open+Sans:300,400,800" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri();?>/assets/css/style.min.css" />
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.1&appId=253811747993905&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <header class="main">
         <div class="container">
             <div class="grid">
                 <nav class="menu">
                     <div>
-                        <a href="/yoda/index.html">Home</a>
-                        <a href="/yoda/carreira.html">Carreira</a>
-                        <a href="#">Produtos</a>
-                        <a href="#">Criação de Conteúdo</a>
-                        <a href="/yoda/marca.html">Marca</a>
-                        <a href="/yoda/midia.html">Mídia</a>
+                        <a href="<?php echo site_url('/'); ?>">Home</a>
+                        <a href="<?php echo site_url('/carreira/'); ?>">Carreira</a>
+                        <a href="<?php echo site_url('/produtos/'); ?>">Produtos</a>
+                        <a href="<?php echo site_url('/criacao-de-conteudo/'); ?>">Criação de Conteúdo</a>
+                        <a href="<?php echo site_url('/marca/'); ?>">Marca</a>
+                        <a href="<?php echo site_url('/midia/'); ?>">Mídia</a>
                     </div>
                 </nav>
                 <nav class="social">
@@ -35,20 +44,3 @@
             </div>
         </div>
     </header>
-
-    <div class="home">
-        <div class="left"></div>
-        <a href="#" target="_blank" class="mail">
-            <span class="fa fa-envelope"></span>
-            <span>contato@felipeyoda.com.br</span>
-        </a>
-        <div class="right">
-            <h1>Felipe<br />YoDa</h1>
-            <img src="assets/img/yoda.png" alt="YoDa" class="yoda">
-            <img src="assets/img/logo.png" alt="Logo" class="logo">
-        </div>
-    </div>
-
-    <script src="assets/js/bundle.min.js"></script>
-</body>
-</html>
