@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); the_post(); ?>
 
     <section class="career">
         <div class="text">
@@ -12,8 +12,7 @@
                 </div>
             </header>
             <div class="content">
-                <p>Disputou o Campeonato Brasileiro de League of Legends pela CNB e-Sport Club, integrou o elenco da Red Canids, time que foi Campeão Brasileiro na primeira etapa da competição em 2017 e disputou o Mid-Season Invitational, campeonato mundial disputado no Brasil. Como streamer, atualmente é o líder brasileiro de audiência e um dos quatro maiores do mundo, transmitindo partidas de League of Legends pela plataforma Twitch para um público de em média 30 mil pessoas.</p>
-                <p class="featured">YoDa começou a fazer streams, transmissões ao vivo de jogos, quando defendia a equipe amadora Legends BR, e divulgava sua stream como "a melhor Katarina [seu principal campeão no jogo] do mundo", pois liderava o ranking de proficiência com a personagem no site LoLKing.</p>
+                <?php the_content(); ?>
             </div>
         </div>
         <div class="image">
