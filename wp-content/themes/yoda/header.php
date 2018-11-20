@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Felipe Yoda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,900|Open+Sans:300,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri();?>/assets/css/style.min.css" />
 </head>
 <body>
@@ -25,7 +25,16 @@
                     <div>
                         <a href="<?php echo site_url('/'); ?>">Home</a>
                         <a href="<?php echo site_url('/carreira/'); ?>">Carreira</a>
-                        <a href="#">Produtos</a>
+                        <div class="dropdown">
+                            Produtos
+                            <div class="menu-dropdown">
+                                <a href="#">Vestuários</a>
+                                <a href="#">Acessórios</a>
+                                <a href="#">Periféricos</a>
+                                <a href="#">Computadores</a>
+                                <a href="#">Material escolar</a>
+                            </div>
+                        </div>
                         <a href="<?php echo site_url('/criacao-de-conteudo/'); ?>">Criação de Conteúdo</a>
                         <a href="<?php echo site_url('/marca/'); ?>">Marca</a>
                         <a href="<?php echo site_url('/midia/'); ?>">Mídia</a>

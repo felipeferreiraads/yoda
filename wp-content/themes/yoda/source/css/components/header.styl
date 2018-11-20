@@ -32,10 +32,33 @@ header.main
         a
             color: $color.text
             transition: .2s
+            padding-bottom: 10px
             +below($bp.lg)
                 color white
             &:hover
                 color: $color.primary
+        .dropdown
+            display inline-block
+            position relative
+            color: $color.text
+            cursor pointer
+            padding-bottom: 10px
+            &:hover
+                > .menu-dropdown
+                    display block
+        .menu-dropdown
+            display none
+            position: absolute
+            background: $color.secondary
+            width 170px
+            top: 100%
+            a
+                padding: 0 10px
+                line-height: 40px
+                display: block
+                height 40px
+                color: white
+                font-weight: 500
     .social
         font-size 25px
         color: $color.secondary

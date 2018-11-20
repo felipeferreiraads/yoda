@@ -2676,6 +2676,7 @@ header.main .menu > div {
 header.main .menu a {
   color: #909090;
   transition: 0.2s;
+  padding-bottom: 10px;
 }
 @media only screen and (max-width: 1024px) {
   header.main .menu a {
@@ -2684,6 +2685,31 @@ header.main .menu a {
 }
 header.main .menu a:hover {
   color: #44bbc3;
+}
+header.main .menu .dropdown {
+  display: inline-block;
+  position: relative;
+  color: #909090;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+header.main .menu .dropdown:hover > .menu-dropdown {
+  display: block;
+}
+header.main .menu .menu-dropdown {
+  display: none;
+  position: absolute;
+  background: #ffa900;
+  width: 170px;
+  top: 100%;
+}
+header.main .menu .menu-dropdown a {
+  padding: 0 10px;
+  line-height: 40px;
+  display: block;
+  height: 40px;
+  color: #fff;
+  font-weight: 500;
 }
 header.main .social {
   font-size: 25px;
