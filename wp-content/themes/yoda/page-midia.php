@@ -9,27 +9,7 @@
 
             <div class="grid">
                 <div class="item">
-                    <iframe src="https://www.youtube.com/embed/jvjyzJdyIV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <h2>YoDa no Globo Esporte SP</h2>
-                </div>
-                <div class="item">
-                    <iframe src="https://www.youtube.com/embed/jvjyzJdyIV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <h2>YoDa no Globo Esporte SP</h2>
-                </div>
-                <div class="item">
-                    <iframe src="https://www.youtube.com/embed/jvjyzJdyIV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <h2>YoDa no Globo Esporte SP</h2>
-                </div>
-                <div class="item">
-                    <iframe src="https://www.youtube.com/embed/jvjyzJdyIV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <h2>YoDa no Globo Esporte SP</h2>
-                </div>
-                <div class="item">
-                    <iframe src="https://www.youtube.com/embed/jvjyzJdyIV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <h2>YoDa no Globo Esporte SP</h2>
-                </div>
-                <div class="item">
-                    <iframe src="https://www.youtube.com/embed/jvjyzJdyIV0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/yoda-career.jpg" alt="">
                     <h2>YoDa no Globo Esporte SP</h2>
                 </div>
             </div>

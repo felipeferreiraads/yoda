@@ -28,11 +28,11 @@
                         <div class="dropdown">
                             Produtos
                             <div class="menu-dropdown">
-                                <a href="#">Vestuários</a>
-                                <a href="#">Acessórios</a>
-                                <a href="#">Periféricos</a>
-                                <a href="#">Computadores</a>
-                                <a href="#">Material escolar</a>
+                                <a href="https://www.2amgaming.com/yoda" target="_blank">YoPC/YoNote </a>
+                                <a href="https://www.2amgaming.com/yoda" target="_blank">YoAcessorios</a>
+                                <a href="https://www.kalunga.com.br/prod/caderno-universitario-capa-dura-10x1-200-fls-red-canids-19878-spiral-red/130686/?menuID=28" target="_blank">YoEscolar</a>
+                                <a href="https://atletasdemarca.com.br/marca/felipe-yoda/" target="_blank">YoVestuários - Atletas de marca / YoDa</a>
+                                <a href="https://www.uselolja.com.br/yoda_qO31654309XtOcxSM" target="_blank"> LoLja/YoDa</a>
                             </div>
                         </div>
                         <a href="<?php echo site_url('/criacao-de-conteudo/'); ?>">Criação de Conteúdo</a>
