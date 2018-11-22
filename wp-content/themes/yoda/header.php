@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <?php wp_head(); ?>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Felipe Yoda</title>
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri();?>/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri();?>/assets/img/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo get_template_directory_uri();?>/assets/img/site.webmanifest">
+    <link rel="mask-icon" href="<?php echo get_template_directory_uri();?>/assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="theme-color" content="#5bbad5">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo get_template_directory_uri();?>/assets/css/style.min.css" />
@@ -35,12 +42,11 @@
                                 <a href="https://www.uselolja.com.br/yoda_qO31654309XtOcxSM" target="_blank"> LoLja/YoDa</a>
                             </div>
                         </div>
-                        <a href="<?php echo site_url('/criacao-de-conteudo/'); ?>">Criação de Conteúdo</a>
                         <a href="<?php echo site_url('/marca/'); ?>">Marca</a>
                         <a href="<?php echo site_url('/midia/'); ?>">Mídia</a>
                     </div>
                 </nav>
-                <?php if(is_page(['home', 'midia', 'criacao-de-conteudo'])): ?>
+                <?php if(is_page(['home', 'midia', 'criacao-de-conteudo']) or wp_is_mobile()): ?>
                 <nav class="social">
                     <a href="#"><span class="fa fa-facebook-square"></span></a>
                     <a href="#"><span class="fa fa-twitch"></span></a>

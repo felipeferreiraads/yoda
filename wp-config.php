@@ -23,10 +23,10 @@
 define('DB_NAME', 'yoda');
 
 /** Usuário do banco de dados MySQL */
-define('DB_USER', 'yodev');
+define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '0Cr5056a3v0+wwS');
+define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
 define('DB_HOST', 'localhost');
