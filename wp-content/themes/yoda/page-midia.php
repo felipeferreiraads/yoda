@@ -8,10 +8,14 @@
             </header>
 
             <div class="grid">
-                <div class="item">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/yoda-career.jpg" alt="">
-                    <h2>YoDa no Globo Esporte SP</h2>
-                </div>
+            <?php if( have_rows('midia') ): ?>
+                <?php  while ( have_rows('midia') ) : the_row(); ?>
+                <a href="<?php the_sub_field('link'); ?>" class="item">
+                    <img src="<?php the_sub_field('imagem'); ?>" alt="<?php the_sub_field('titulo'); ?>">
+                    <h2><?php the_sub_field('titulo'); ?></h2>
+                </a>
+                <?php endwhile; ?>
+            <?php endif; ?>
             </div>
         </div>
     </section>

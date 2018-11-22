@@ -2209,6 +2209,48 @@ body.swal2-iosfix {
     order: 1;
   }
 }
+.partners {
+  width: 100%;
+  padding: 50px 0;
+  background: #eee;
+}
+.partners .grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .partners .grid {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .partners .grid a {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .partners .grid a:nth-child(n+3) {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .partners .grid a {
+    width: 100%;
+  }
+  .partners .grid a:nth-child(n+2) {
+    margin-top: 50px;
+  }
+}
+.partners h2 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 30px;
+  letter-spacing: 5px;
+}
 .career {
   display: flex;
   padding: 0 20px;
@@ -2651,7 +2693,7 @@ header.main .menu > div {
 }
 @media only screen and (min-width: 1024px) {
   header.main .menu {
-    flex-basis: 50%;
+    flex-basis: 35%;
   }
   header.main .menu > div {
     justify-content: space-between;
@@ -2692,6 +2734,11 @@ header.main .menu .dropdown {
   color: #909090;
   cursor: pointer;
   padding-bottom: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  header.main .menu .dropdown {
+    color: #fff;
+  }
 }
 header.main .menu .dropdown:hover > .menu-dropdown {
   display: block;

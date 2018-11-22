@@ -15,7 +15,7 @@ header.main
         > div
             display flex
         +above($bp.lg)
-            flex-basis 50%
+            flex-basis 35%
             > div
                 justify-content: space-between
         +below($bp.lg)
@@ -43,6 +43,8 @@ header.main
             color: $color.text
             cursor pointer
             padding-bottom: 10px
+            +below($bp.lg)
+                color white
             &:hover
                 > .menu-dropdown
                     display block

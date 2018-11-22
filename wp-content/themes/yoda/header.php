@@ -35,12 +35,11 @@
                                 <a href="https://www.uselolja.com.br/yoda_qO31654309XtOcxSM" target="_blank"> LoLja/YoDa</a>
                             </div>
                         </div>
-                        <a href="<?php echo site_url('/criacao-de-conteudo/'); ?>">Criação de Conteúdo</a>
                         <a href="<?php echo site_url('/marca/'); ?>">Marca</a>
                         <a href="<?php echo site_url('/midia/'); ?>">Mídia</a>
                     </div>
                 </nav>
-                <?php if(is_page(['home', 'midia', 'criacao-de-conteudo'])): ?>
+                <?php if(is_page(['home', 'midia', 'criacao-de-conteudo']) or wp_is_mobile()): ?>
                 <nav class="social">
                     <a href="#"><span class="fa fa-facebook-square"></span></a>
                     <a href="#"><span class="fa fa-twitch"></span></a>

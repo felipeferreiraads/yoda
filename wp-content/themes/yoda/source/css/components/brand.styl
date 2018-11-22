@@ -6,6 +6,20 @@
         display flex
         justify-content: space-between
         align-items: center
+        +below($bp.lg)
+            flex-wrap: wrap
+        a
+            +below($bp.lg)
+                width: 50%
+                display flex
+                justify-content: center
+                &:nth-child(n+3)
+                    margin-top: 50px
+            +below($bp.sm)
+                width: 100%
+                &:nth-child(n+2)
+                    margin-top: 50px
+
     h2
         font-size: 40px
         font-weight: 300
