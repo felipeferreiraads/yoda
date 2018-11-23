@@ -16,25 +16,24 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/bg-brand.jpg" class="bg" />
         </div>
     </section>
-    
+
+    <?php if( have_rows('parceiro') ): ?>
     <section class="partners">
         <div class="container">
             <h2>Parceiros</h2>
             <div class="grid">
-                <a href="#" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/red-canids.png" alt="Red Canids">
+            <?php  while ( have_rows('midia') ) : the_row(); ?>
+                <a href="<?php the_sub_field('link'); ?>" target="_blank">
+                    <img src="<?php the_sub_field('link'); ?>" alt="<?php the_sub_field('nome'); ?>">
                 </a>
-                <a href="#" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitch.png" alt="Twitch">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logitech.png" alt="Logitech">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/2-am.png" alt="2AM">
-                </a>
+            <?php endwhile; ?>
+            </div>
+            <div class="arrows">
+                <button class="prev"><span class="fa fa-angle-left"></span></button>
+                <button class="next"><span class="fa fa-angle-right"></span></button>
             </div>
         </div>
     </section>
+    <?php endif; ?>
 
 <?php get_footer(); ?>

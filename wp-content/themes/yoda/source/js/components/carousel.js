@@ -1,34 +1,28 @@
 import 'owl.carousel'
 
-$('.treatments .carousel').owlCarousel({
+$('.partners .grid').owlCarousel({
     navigation : false,
+    dots: false,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 2000,
     responsive:{
-        320:{
-            items:1,
+        320: {
+            items: 1,
         },
-        1150:{
-            items:2
+        768: {
+            items: 2,
+        },
+        1024: {
+            items: 4
         }
     }
 })
 
 $('.prev').click(function () {
-    $('.carousel').trigger('prev.owl.carousel', [300])
+    $('.partners .grid').trigger('prev.owl.carousel', [300])
 })
 
 $('.next').click(function () {
-    $('.carousel').trigger('next.owl.carousel')
-})
-
-$('.about .carousel').owlCarousel({
-    items: 1
-})
-
-$('.banner .carousel, .banner .carousel-mobile').owlCarousel({
-    items: 1,
-    autoplay: true
-})
-
-$('.testmonials .carousel').owlCarousel({
-    items: 1
+    $('.partners .grid').trigger('next.owl.carousel')
 })
