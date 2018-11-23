@@ -37,24 +37,4 @@
         </div>
     </section>
 
-    <section class="partners">
-        <div class="container">
-            <h2>Parceiros</h2>
-            <div class="grid">
-                <a href="http://www.redcanids.com.br/" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/red-canids.png" alt="Red Canids">
-                </a>
-                <a href="https://www.twitch.tv/" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/twitch.png" alt="Twitch">
-                </a>
-                <a href="https://www.logitech.com/pt-br" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logitech.png" alt="Logitech">
-                </a>
-                <a href="https://www.2amgaming.com/" target="_blank">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/2-am.png" alt="2AM">
-                </a>
-            </div>
-        </div>
-    </section>
-
 <?php get_footer(); ?>

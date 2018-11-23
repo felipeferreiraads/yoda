@@ -4,7 +4,7 @@
         <div class="left"></div>
         <a href="#" target="_blank" class="mail">
             <span class="fa fa-envelope"></span>
-            <span>contato@felipeyoda.com.br</span>
+            <span>contato@sehloirooficial.com.br</span>
         </a>
         <div class="right">
             <h1>Felipe<br />YoDa</h1>
@@ -13,6 +13,7 @@
         </div>
     </div>
 
+    <?php wp_footer(); ?>
     <script src="<?php echo get_template_directory_uri();?>/assets/js/bundle.min.js"></script>
 </body>
 

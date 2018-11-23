@@ -48,11 +48,11 @@
                 </nav>
                 <?php if(is_page(['home', 'midia', 'criacao-de-conteudo']) or wp_is_mobile()): ?>
                 <nav class="social">
-                    <a href="#"><span class="fa fa-facebook-square"></span></a>
-                    <a href="#"><span class="fa fa-twitch"></span></a>
-                    <a href="#"><span class="fa fa-instagram"></span></a>
-                    <a href="#"><span class="fa fa-twitter"></span></a>
-                    <a href="#"><span class="fa fa-youtube-play"></span></a>
+                    <a href="https://www.facebook.com/Stoneyoda/" target="_blank"><span class="fa fa-facebook-square"></span></a>
+                    <a href="https://www.twitch.tv/Yoda/" target="_blank"><span class="fa fa-twitch"></span></a>
+                    <a href="https://www.instagram.com/stonedyoda/" target="_blank"><span class="fa fa-instagram"></span></a>
+                    <a href="https://twitter.com/stonedyooda" target="_blank"><span class="fa fa-twitter"></span></a>
+                    <a href="https://www.youtube.com/channel/UCuhVlANZXUATGv1dRmwcUzA" target="_blank"><span class="fa fa-youtube-play"></span></a>
                 </nav>
                 <?php endif; ?>
                 <div class="toggle">

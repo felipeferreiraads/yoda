@@ -32,13 +32,13 @@
         </div>
         <div class="see-too">
             <span>Visite também</span>
-            <a href="#">
+            <a href="http://yotalkshow.com.br/" target="_blank">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/yotalkshow-footer.png" alt="YoTalkshow">
             </a>
-            <a href="#">
+            <a href="http://www.sehloirooficial.com.br/" target="_blank">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sehloiro-footer.png" alt="SehLoiro">
             </a>
-            <a href="#">
+            <a href="https://noline.live/" target="_blank">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/noline-footer.png" alt="NoLine">
             </a>
         </div>

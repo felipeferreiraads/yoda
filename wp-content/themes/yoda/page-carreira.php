@@ -8,7 +8,7 @@
                 </figure>
                 <div class="info">
                     <h1>Felipe Noronha</h1>
-                    <p>mais conhecido pelo apelido de <span>YoDa</span>, é o maior streamer e jogador profissional do Brail</p>
+                    <p>mais conhecido pelo apelido de <span>YoDa</span>, é o maior streamer e jogador profissional do Brasil</p>
                 </div>
             </header>
             <div class="content">
