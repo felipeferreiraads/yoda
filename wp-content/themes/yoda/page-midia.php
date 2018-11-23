@@ -8,9 +8,9 @@
             </header>
 
             <div class="grid">
-            <?php if( have_rows('parceiro') ): ?>
+            <?php if( have_rows('midia') ): ?>
                 <?php  while ( have_rows('midia') ) : the_row(); ?>
-                <a href="<?php the_sub_field('link'); ?>" class="item">
+                <a href="<?php the_sub_field('link'); ?>" class="item" target="_blank">
                     <img src="<?php the_sub_field('imagem'); ?>" alt="<?php the_sub_field('titulo'); ?>">
                     <h2><?php the_sub_field('titulo'); ?></h2>
                 </a>
