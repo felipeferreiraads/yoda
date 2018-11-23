@@ -8,11 +8,11 @@
                     <h3>Conecte-se</h3>
                     <p>Acompanhe as novidades em tempo real :)</p>
                     <nav class="social">
-                        <a href="#"><span class="fa fa-facebook-square"></span></a>
-                        <a href="#"><span class="fa fa-twitch"></span></a>
-                        <a href="#"><span class="fa fa-instagram"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-youtube-play"></span></a>
+                        <a href="https://www.facebook.com/Stoneyoda/" target="_blank"><span class="fa fa-facebook-square"></span></a>
+                        <a href="https://www.twitch.tv/Yoda/" target="_blank"><span class="fa fa-twitch"></span></a>
+                        <a href="https://www.instagram.com/stonedyoda/" target="_blank"><span class="fa fa-instagram"></span></a>
+                        <a href="https://twitter.com/stonedyooda" target="_blank"><span class="fa fa-twitter"></span></a>
+                        <a href="https://www.youtube.com/channel/UCuhVlANZXUATGv1dRmwcUzA" target="_blank"><span class="fa fa-youtube-play"></span></a>
                     </nav>
                     <a href="#" target="_blank" class="mail">
                         <span class="fa fa-envelope"></span>
@@ -22,10 +22,9 @@
                 <div class="item">
                     <h3>Acesso rápido</h3>
                     <nav class="menu">
-                        <a href="#">Carreira</a>
-                        <a href="#">Marca</a>
-                        <a href="#">Mídia</a>
-                        <a href="#">Contato</a>
+                        <a href="<?php echo site_url('/carreira/'); ?>">Carreira</a>
+                        <a href="<?php echo site_url('/marca/'); ?>">Marca</a>
+                        <a href="<?php echo site_url('/carreira/'); ?>">Mídia</a>
                     </nav>
                 </div>
             </div>

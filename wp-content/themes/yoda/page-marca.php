@@ -22,9 +22,9 @@
         <div class="container">
             <h2>Parceiros</h2>
             <div class="grid">
-            <?php  while ( have_rows('midia') ) : the_row(); ?>
+            <?php  while ( have_rows('parceiro') ) : the_row(); ?>
                 <a href="<?php the_sub_field('link'); ?>" target="_blank">
-                    <img src="<?php the_sub_field('link'); ?>" alt="<?php the_sub_field('nome'); ?>">
+                    <img src="<?php the_sub_field('imagem'); ?>" alt="<?php the_sub_field('nome'); ?>">
                 </a>
             <?php endwhile; ?>
             </div>

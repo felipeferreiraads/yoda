@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); the_post(); ?>
 
     <section class="media">
         <div class="container">
@@ -8,7 +8,7 @@
             </header>
 
             <div class="grid">
-            <?php if( have_rows('midia') ): ?>
+            <?php if( have_rows('parceiro') ): ?>
                 <?php  while ( have_rows('midia') ) : the_row(); ?>
                 <a href="<?php the_sub_field('link'); ?>" class="item">
                     <img src="<?php the_sub_field('imagem'); ?>" alt="<?php the_sub_field('titulo'); ?>">
