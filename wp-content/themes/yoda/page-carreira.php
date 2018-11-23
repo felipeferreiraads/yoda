@@ -75,7 +75,7 @@
             <p>
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/yoda-career.jpg" alt="ProPlayer">
                 <?php the_field('carreira'); ?>
-                <span>#ÉOQ</span>
+                <span class="eoq">#ÉOQ</span>
             </p>
         </div>
     </section>
