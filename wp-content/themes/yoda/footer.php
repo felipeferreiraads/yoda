@@ -14,9 +14,9 @@
                         <a href="https://twitter.com/stonedyooda" target="_blank"><span class="fa fa-twitter"></span></a>
                         <a href="https://www.youtube.com/channel/UCuhVlANZXUATGv1dRmwcUzA" target="_blank"><span class="fa fa-youtube-play"></span></a>
                     </nav>
-                    <a href="#" target="_blank" class="mail">
+                    <a href="mailto:contato@sehloirooficial.com.br" target="_blank" class="mail">
                         <span class="fa fa-envelope"></span>
-                        <span>contato@felipeyoda.com.br</span>
+                        <span>contato@sehloirooficial.com.br</span>
                     </a>
                 </div>
                 <div class="item">
