@@ -2,7 +2,7 @@
 
     <div class="home">
         <div class="left"></div>
-        <a href="#" target="_blank" class="mail">
+        <a href="mailto:contato@sehloirooficial.com.br" target="_blank" class="mail">
             <span class="fa fa-envelope"></span>
             <span>contato@sehloirooficial.com.br</span>
         </a>

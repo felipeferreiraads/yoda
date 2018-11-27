@@ -24,7 +24,7 @@
                     <nav class="menu">
                         <a href="<?php echo site_url('/carreira/'); ?>">Carreira</a>
                         <a href="<?php echo site_url('/marca/'); ?>">Marca</a>
-                        <a href="<?php echo site_url('/carreira/'); ?>">Mídia</a>
+                        <a href="<?php echo site_url('/midia/'); ?>">Mídia</a>
                     </nav>
                 </div>
             </div>
